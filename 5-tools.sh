@@ -21,4 +21,4 @@ sudo apt update && sudo apt install librewolf -y
 # Obsidian
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
 chmod 755 obsidian_1.12.7_amd64.deb
-apt install -y obsidian_1.12.7_amd64.deb
+sudo apt install -y ./obsidian_1.12.7_amd64.deb
