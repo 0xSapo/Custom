@@ -1,5 +1,6 @@
 #!/bin/bash
 # cargo
+DIR="$HOME/Downloads"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source ~/.cargo/env
 # Eww
