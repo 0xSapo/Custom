@@ -11,10 +11,9 @@ echo PATH="$PATH:/usr/local/go/bin" >> $HOME/.bashrc
 source $HOME/.bashrc
 
 # Caido
-wget https://caido.download/releases/v0.57.1/caido-desktop-v0.57.1-linux-x86_64.AppImage
-chmod 744 caido-desktop-v0.57.1-linux-x86_64.AppImage
-sudo mv caido-desktop-v0.57.1-linux-x86_64.AppImage /usr/bin/caido
-
+wget https://caido.download/releases/v0.57.1/caido-desktop-v0.57.1-linux-x86_64.deb
+chmod 755 caido-desktop-v0.57.1-linux-x86_64.deb
+sudo apt install ./caido-desktop-v0.57.1-linux-x86_64.deb
 # Librewolf
 sudo extrepo enable librewolf && sudo extrepo update librewolf
 sudo apt update && sudo apt install librewolf -y
