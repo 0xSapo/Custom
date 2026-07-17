@@ -8,7 +8,7 @@ git clone https://github.com/elkowar/eww "$DIR/eww"
 cd "$DIR/eww"
 TMPDIR="$DIR/trust" cargo build --release --no-default-features --features x11
 # dwm
-git clone https://git.suckless.org/dwm "$DIR/dwm"
-cd "$DIR/dwm"
+git clone https://github.com/0xSapo/sdwm "$DIR/sdwm"
+cd "$DIR/sdwm"
 sudo make clean install
 cd - > /dev/null
