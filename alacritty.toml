@@ -1,0 +1,34 @@
+[terminal]
+shell = "bash"
+osc52 = "CopyPaste"  # Opciones: "Disabled", "OnlyCopy", "OnlyPaste", "CopyPaste"
+
+[selection]
+save_to_clipboard = true
+
+[general]
+import = ["./TokyoNight.toml"]
+
+[window]
+opacity = 0.90
+decorations = "none"
+
+[mouse]
+bindings = [{ mouse = "Right", action = "Copy" },]
+
+[keyboard]
+bindings = [
+		{ key = "c", mods = "Control|Shift", action = "Copy" },
+		{ key = "v", mods = "Control", action = "Paste" },
+		{ key = "w", mods = "Control|Shift", action = "Quit" },
+		{ key = "n", mods = "Control|Shift", action = "SpawnNewInstance" },
+		
+		{ key = "ArrowUp", mods = "Shift", action = "ScrollLineUp" },
+		{ key = "ArrowUp", mods = "Control", action = "ScrollHalfPageUp" },
+		{ key = "ArrowUp", mods = "Control|Shift", action = "ScrollPageUp" },
+		
+		{ key = "ArrowDown", mods = "Shift", action = "ScrollLineDown" },
+		{ key = "ArrowDown", mods = "Control", action = "ScrollHalfPageDown" },
+		{ key = "ArrowDown", mods = "Control|Shift", action = "ScrollPageDown" },
+
+		{ key = "ArrowLeft", mods = "Control|Shift", action = "WordLeft" },
+	]
