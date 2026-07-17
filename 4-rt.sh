@@ -2,10 +2,6 @@
 # cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source ~/.cargo/env
-# yazi
-cargo install yazi-build
-DIR="$HOME/Downloads"
-mkdir -p "$DIR/trust"
 # Eww
 git clone https://github.com/elkowar/eww "$DIR/eww"
 cd "$DIR/eww"
