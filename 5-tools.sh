@@ -13,7 +13,7 @@ source $HOME/.bashrc
 # Caido
 wget https://caido.download/releases/v0.57.1/caido-desktop-v0.57.1-linux-x86_64.deb
 chmod 755 caido-desktop-v0.57.1-linux-x86_64.deb
-sudo apt install ./caido-desktop-v0.57.1-linux-x86_64.deb
+sudo apt install -y ./caido-desktop-v0.57.1-linux-x86_64.deb
 # Librewolf
 sudo extrepo enable librewolf && sudo extrepo update librewolf
 sudo apt update && sudo apt install librewolf -y
