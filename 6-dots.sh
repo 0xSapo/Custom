@@ -9,5 +9,6 @@ if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
 fi
 EOF
 
+echo "feh --bg-scale $HOME/Custom/wallpapers/space_guards.jpg &" >> ~/.xinitrc
 echo "exec dwm" >> ~/.xinitrc
 
