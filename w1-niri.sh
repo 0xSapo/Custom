@@ -1,20 +1,29 @@
 #!/bin/bash
 set -e
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source ~/.cargo/env
-echo "[*] Instalando niri..."
-
 # Instalar dependencias
 echo "[+] Instalando dependencias..."
 sudo apt update
-sudo apt install -y \
-    build-essential \
-    libwayland-dev \
-    libxkbcommon-dev \
-    libpango1.0-dev \
-    libpipewire-0.3-common \ 
-    libpipewire-0.3-dev \
+sudo apt install -y gcc \
+                    curl \
+                    clang \
+                    libudev-dev \
+                    libgbm-dev \
+                    libxkbcommon-dev \
+                    libegl1-mesa-dev \
+                    libwayland-dev \
+                    libinput-dev \
+                    libdbus-1-dev \
+                    libsystemd-dev \
+                    libseat-dev \
+                    libpipewire-0.3-dev \
+                    libpango1.0-dev \
+                    libdisplay-info-dev
+
+echo "[*] Instalando rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source ~/.cargo/env
+
+echo "[*] Instalando niri..."
     
 # Crear directorio temporal
 TMPDIR=$(mktemp -d)
