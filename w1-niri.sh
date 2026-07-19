@@ -24,12 +24,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source ~/.cargo/env
 
 echo "[*] Instalando niri..."
-    
-# Crear directorio temporal
-TMPDIR=$(mktemp -d)
-trap "rm -rf $TMPDIR" EXIT
-
-cd "$TMPDIR"
+mkdir -p "$HOME/Downloads/rtemp"
+cd "$HOME/Downloads"
 
 # Clonar y compilar
 echo "[+] Clonando repositorio..."
@@ -37,7 +33,7 @@ git clone https://github.com/YaLTeR/niri.git
 cd niri
 
 echo "[+] Compilando (esto puede tomar varios minutos)..."
-TMPDIR="$HOME/niri" cargo build --release
+TMPDIR="$HOME/rtemp" cargo build --release
 
 # Instalar binario
 echo "[+] Instalando binario..."
