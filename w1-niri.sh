@@ -1,18 +1,18 @@
 #!/bin/bash
 set -e
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source ~/.cargo/env
 echo "[*] Instalando niri..."
 
 # Instalar dependencias
 echo "[+] Instalando dependencias..."
 sudo apt update
 sudo apt install -y \
-    rust \
-    cargo \
+    build-essential \
     libwayland-dev \
     libxkbcommon-dev \
-    libpango-dev \
-    git
+    libpango1.0-dev
 
 # Crear directorio temporal
 TMPDIR=$(mktemp -d)
