@@ -12,8 +12,10 @@ sudo apt install -y \
     build-essential \
     libwayland-dev \
     libxkbcommon-dev \
-    libpango1.0-dev
-
+    libpango1.0-dev \
+    libpipewire-0.3-common \ 
+    libpipewire-0.3-dev \
+    
 # Crear directorio temporal
 TMPDIR=$(mktemp -d)
 trap "rm -rf $TMPDIR" EXIT
