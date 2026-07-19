@@ -37,7 +37,7 @@ git clone https://github.com/YaLTeR/niri.git
 cd niri
 
 echo "[+] Compilando (esto puede tomar varios minutos)..."
-cargo build --release
+TMPDIR="$HOME/niri" cargo build --release
 
 # Instalar binario
 echo "[+] Instalando binario..."
