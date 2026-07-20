@@ -1,28 +1,5 @@
 #!/bin/bash
 set -e
-# Instalar dependencias
-echo "[+] Instalando dependencias..."
-sudo apt update
-sudo apt install -y gcc \
-                    curl \
-                    clang \
-                    libudev-dev \
-                    libgbm-dev \
-                    libxkbcommon-dev \
-                    libegl1-mesa-dev \
-                    libwayland-dev \
-                    libinput-dev \
-                    libdbus-1-dev \
-                    libsystemd-dev \
-                    libseat-dev \
-                    libpipewire-0.3-dev \
-                    libpango1.0-dev \
-                    libdisplay-info-dev
-
-echo "[*] Instalando rust..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source ~/.cargo/env
-
 echo "[*] Instalando niri..."
 mkdir -p "$HOME/Downloads/rtemp"
 cd "$HOME/Downloads"
@@ -41,6 +18,7 @@ sudo cp target/release/niri /usr/local/bin/
 
 # Crear entrada de sesión
 echo "[+] Creando entrada de sesión..."
+mkdir -p /usr/share/wayland-sessions/
 sudo tee /usr/share/wayland-sessions/niri.desktop > /dev/null <<'EOF'
 [Desktop Entry]
 Type=Application
@@ -86,9 +64,3 @@ prefer-no-csd
 EOF
     echo "[+] Configuración base creada en ~/.config/niri/config.kdl"
 fi
-
-echo "[✓] Instalación completada"
-echo "[*] Próximos pasos:"
-echo "    - Editar ~/.config/niri/config.kdl"
-echo "    - Seleccionar 'Niri' al iniciar sesión (pantalla de login)"
-echo "    - Reiniciar sesión"
