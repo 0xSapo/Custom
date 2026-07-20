@@ -18,7 +18,7 @@ sudo cp target/release/niri /usr/local/bin/
 
 # Crear entrada de sesión
 echo "[+] Creando entrada de sesión..."
-mkdir -p /usr/share/wayland-sessions/
+sudo mkdir -p /usr/share/wayland-sessions/
 sudo tee /usr/share/wayland-sessions/niri.desktop > /dev/null <<'EOF'
 [Desktop Entry]
 Type=Application
