@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "[+] Instalando dependencias..."
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 # General dependencies
 sudo apt install -y gcc \
                     alacritty \
