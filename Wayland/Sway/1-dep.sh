@@ -24,5 +24,6 @@ sudo apt install -y glslang-tools \
                     pkgconf \
                     scdoc \
                     tree \
+                    curl \
                     wayland-protocols
 sudo apt build-dep sway
