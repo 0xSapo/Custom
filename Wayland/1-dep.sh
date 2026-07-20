@@ -8,7 +8,7 @@ sudo apt install -y gcc \
                     clang \
                     curl \
                     curl \
-                    extrepo
+                    extrepo \
                     feh \
                     fuse3 \
                     git \
@@ -17,7 +17,7 @@ sudo apt install -y gcc \
                     libdbusmenu-glib-dev \
                     libdbusmenu-gtk3-dev \
                     libdbusmenu-qt5-dev \
-                    libdisplay-info-dev
+                    libdisplay-info-dev \
                     libegl1-mesa-dev \
                     libfontconfig1-dev \
                     libfuse3-dev \
