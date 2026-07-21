@@ -1,6 +1,6 @@
-sudo apt update -y && sudo apt upgrade -y
-sudo apt build-dep sway
-sudo apt install -y glslang-tools \
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get build-dep sway
+sudo apt-get install -y glslang-tools \
                     libcairo2-dev \
                     libcap-dev \
                     libdbus-1-dev \
@@ -21,6 +21,7 @@ sudo apt install -y glslang-tools \
                     libwayland-egl1 \
                     libwlroots-dev \
                     libxcb-ewmh-dev \
+                    libxml2-dev \
                     libxkbcommon-dev \
                     meson \
                     pkgconf \
