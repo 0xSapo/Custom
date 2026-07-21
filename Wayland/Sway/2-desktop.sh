@@ -3,15 +3,12 @@
 mkdir -p "$HOME/Downloads"
 
 cd "$HOME/Downloads"
-git clone https://gitlab.freedesktop.org/wlroots/wlroots/
-cd wlroots
-meson setup build
-ninja -C build
-sudo ninja -C build install
 
-cd "$HOME/Downloads"
-git clone https://github.com/swaywm/sway
+# Clone repositories
+git clone https://github.com/swaywm/sway.git
 cd sway
-meson setup build
-ninja -C build
-sudo ninja -C build install
+git clone https://gitlab.freedesktop.org/wlroots/wlroots.git subprojects/wlroots
+
+# Build sway and wlroots
+meson setup build/ -Dwrap_mode=default
+ninja -C build/

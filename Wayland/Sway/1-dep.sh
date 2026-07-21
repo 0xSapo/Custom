@@ -29,4 +29,6 @@ sudo apt-get install -y glslang-tools \
                     tree \
                     curl \
                     cmake \
+                    bison \
+                    sway \
                     wayland-protocols
