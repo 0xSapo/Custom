@@ -18,5 +18,4 @@ sudo apt-get install -y alacritty \
                         sway \
                         tree \
                         unzip \
-                        wayland-protocols \
-                        xterm
+                        wayland-protocols
