@@ -9,13 +9,14 @@ sudo apt-get install -y alacritty \
                         extrepo \
                         fuse3 \
                         git \
+                        libwayland-dev \
+                        libwayland-egl1 \
                         meson \
                         pkg-config \
                         pkgconf \
-                        rofi \
                         scdoc \
                         sway \
                         tree \
                         unzip \
                         wayland-protocols \
-                        xterm \
+                        xterm
