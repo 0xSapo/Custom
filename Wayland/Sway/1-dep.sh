@@ -1,3 +1,5 @@
+sudo apt update -y && sudo apt upgrade -y
+sudo apt build-dep sway
 sudo apt install -y glslang-tools \
                     libcairo2-dev \
                     libcap-dev \
@@ -25,5 +27,5 @@ sudo apt install -y glslang-tools \
                     scdoc \
                     tree \
                     curl \
+                    cmake \
                     wayland-protocols
-sudo apt build-dep sway
