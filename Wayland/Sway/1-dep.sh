@@ -1,57 +1,21 @@
+echo "[1] Installing Dependencies"
 sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-get build-dep sway
+sudo apt-get build-dep -y sway
 sudo apt-get install -y alacritty \
                         bison \
                         build-essential \
                         cmake \
                         curl \
                         extrepo \
-                        feh \
                         fuse3 \
                         git \
-                        glslang-tools \
-                        libcairo2-dev \
-                        libcap-dev \
-                        libdbus-1-dev \
-                        libdbusmenu-glib-dev \
-                        libdbusmenu-gtk3-dev \
-                        libdbusmenu-qt5-dev \
-                        libdisplay-info-dev \
-                        libevdev-dev \
-                        libfontconfig1-dev \
-                        libfuse3-dev \
-                        libgdk-pixbuf-2.0-dev \
-                        libgdk-pixbuf2.0-dev \
-                        libgtk-3-dev \
-                        libinput-dev \
-                        libjson-c-dev \
-                        libliftoff-dev \
-                        libpam0g-dev \
-                        libpango1.0-dev \
-                        libpcre2-dev \
-                        libpixman-1-dev \
-                        libseat-dev \
-                        libssl-dev \
-                        libsystemd-dev \
-                        libvulkan-dev \
-                        libwayland-dev \
-                        libwayland-egl1 \
-                        libwlroots-dev \
-                        libx11-dev \
-                        libxcb-ewmh-dev \
-                        libxft-dev \
-                        libxinerama-dev \
-                        libxkbcommon-dev \
-                        libxml2-dev \
                         meson \
                         pkg-config \
                         pkgconf \
                         rofi \
                         scdoc \
-                        suckless-tools \
                         sway \
                         tree \
                         unzip \
-                        wayland-protocols
-                        xorg \
+                        wayland-protocols \
                         xterm \

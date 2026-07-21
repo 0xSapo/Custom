@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "[2] Installing Fonts"
+
 mkdir -p "$HOME/Downloads/fn"
 cd "$HOME/Downloads/fn"
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
